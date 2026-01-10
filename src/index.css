@@ -1,1 +1,36 @@
 @import "tailwindcss";
+
+@font-face {
+  font-family: "Official";
+  src: url("./assets/fonts/Official.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OfficialItalic";
+  src: url("./assets/fonts/OfficialBook-Italic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OfficialBook";
+  src: url("./assets/fonts/OfficialBook.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Saphile";
+  src: url("./assets/fonts/Saphile-Regular.otf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Qanect";
+  src: url("./assets/fonts/Qanect\ Elegant\ font.otf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
