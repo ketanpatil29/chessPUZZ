@@ -19,6 +19,17 @@ const Login = ({ onClose }) => {
       return;
     }
 
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      alert("Please enter a valid email");
+      return;
+    }
+
+    if (password.length < 6) {
+      alert("Password must be at least 6 characters");
+      return;
+    }
+
     try {
       setLoading(true);
 
@@ -76,6 +87,8 @@ const Login = ({ onClose }) => {
 
       alert(`Welcome back, ${data.user.name}!`);
       onClose(); // Close modal
+
+      localStorage.setItem("token", data.token);
 
       // Optionally, save user info in localStorage/session
       localStorage.setItem("user", JSON.stringify(data.user));
